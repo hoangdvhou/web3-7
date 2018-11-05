@@ -1,0 +1,43 @@
+p{
+    background: #000000;
+    color:#ff0000;
+} 
+.text-red {
+    color: #ff0000;
+}
+#top {
+    color:#1ecbb0;
+}
+[type="text"] {
+    background: #000000;
+}
+ul li {
+    color:#ff0000;
+}
+ul > li{
+    color:#4cff00;
+}
+button:hover{
+    font-size:20px;
+}
+input:focus {
+    background: #4cff00;
+}
+ol li:first-child{
+    font-size:20px;
+}
+ol li:nth-child(2){
+    font-size:25px;
+}
+ol li:nth-child(2n+1){
+    color: #ff6a00;
+}
+p {
+    background-image: url("http://image.phimmoi.net/film/665/poster.medium.jpg");
+    background-position: center;
+    border: 1px solid #ff0000;
+    border-radius:25px;
+    padding:50px;
+    margin: 20px;
+    display: block;
+}
