@@ -1,39 +1,43 @@
 .menu {
-    text-align: center;
     background: #D5B0AC;
     color : #402E2A;
+    font-weight: bold;
+    text-align: center;
+
+
 
 }
 .menu span {
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    line-height: 15px;
     width: 100px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    
     
 }
 
 .menu span:hover {
     background: #9CD08F;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .menu_vertical {
-    text-align: center;
+    background: transparent
     color : #402E2A;
+    font-weight: bold;
+    text-align: center;
 }
 .menu_vertical span{
     background: #D5B0AC;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    line-height: 15px;
-    display: block;
     width: 100px;
-    border: 1px solid #FFFFFF;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    border: #FFFFFF solid 1px;
 }
 .menu_vertical span:hover {
     background: #9CD08F;
     color: #FFFFFF;
+    cursor: pointer;
 }
 

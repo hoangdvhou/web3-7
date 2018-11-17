@@ -1,10 +1,6 @@
 const express = require('express');
 let app = express();
 const axios = require('axios');
-
-
-
-
 app.listen(5000, (error) => {
     if (error) {
         console.log(error);
@@ -13,17 +9,15 @@ app.listen(5000, (error) => {
     }
 });
 
-app.get('/', (req,res) => {
-    res.sendFile(__dirname + '/index.html');
+app.get('/web10', (req,res) => {
+    axios ({
+        method: 'GET',
+        url: 'https://btvn-web16s.herokuapp.com/api/web10',
+    }).then(({data}) => {
+        const {student} = data;
+        let studentHTML = studentHTML + "<li>" + student[i] + "</li>";
+    }
+    // console.log(studentHTML);
+    res.send("<ol>" + studentHTML + "</ol>")
 });
-
-const data = app.get('/web:id', (req, response) =>{
-    let id = req.params['id'];
-    axios.get(`https://btvn-web16s.herokuapp.com/api/web${id}`, {
-    }).then(res => {
-        console.log(res.data);
-        response.send(res.data.students);
-    }).catch(err => {
-        console.log(err);
-    });
 });
