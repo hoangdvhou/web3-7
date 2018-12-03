@@ -100,6 +100,8 @@ app.post('/answer', (req,res)=>{
     
     
 })
+app.use(express.static("views"));
+
 
 app.get('/:questionId', (req,res) => {
     const questionId = req.params.questionId;
@@ -118,7 +120,6 @@ app.get('/question/:questionId', (req,res) => {
     })
 });
 
-app.use(express.static("views"));
 app.listen(3000, (err)=>{
     if (err) {
         console.log("error!!!")
